@@ -6,10 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="cute :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/explicit-module-boundary-types.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/explicit-module-boundary-types.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/naming-convention.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/naming-convention.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/parameter-properties.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/docs/rules/parameter-properties.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allfiles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allfiles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aria-query/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aria-query/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prompts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prompts/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,34 +36,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "maicaalmonte"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;maicaalmonte&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/maicaalmonte/nutricalculator.git",
+    "url": "git@github.com:maicaalmonte/nutricalculator.git",
     "accountId": "3cb74500-c7eb-4c0f-992d-3b4fefa67c44"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2qfGMqkB3CLtCVcER6kMZ9KKH5F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.maica.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.maica.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jamai\PycharmProjects\nutricalculator\public" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735049700185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cute :)">
+      <option name="closed" value="true" />
+      <created>1735073956174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735073956174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cute :)">
+      <option name="closed" value="true" />
+      <created>1735074509360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735074509360</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
