@@ -12,11 +12,6 @@ The app also allows fetching news articles using the NewsData.io API. It accepts
 The fetched news articles are returned in a JSON format.
 Flask Routes:
 
-The / route renders an HTML template (index.html) which is served as the landing page.
-The /fetch_data route is a POST endpoint that retrieves food product data from OpenFoodFacts.
-The /fetch_news route is a GET endpoint that retrieves news articles based on a search query from the NewsData.io API.
-Error Handling:
-
 Error handling is implemented to ensure that appropriate error messages are returned in case of issues like invalid inputs or API fetch errors.
 Requirements:
 Flask: Web framework for building the application.
