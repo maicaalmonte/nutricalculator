@@ -14,6 +14,7 @@ Flask Routes:
 
 Error handling is implemented to ensure that appropriate error messages are returned in case of issues like invalid inputs or API fetch errors.
 Requirements:
+#
 Flask: Web framework for building the application.
 Requests: To make HTTP requests to external APIs.
 Pandas: For processing and structuring data from the APIs into DataFrames.
@@ -33,13 +34,13 @@ To set up the project locally, follow these steps:
 3. # On Windows:
  
       ``` bash
-       .venv\Scripts\activate
+       .venv\scripts\activate
    
 3. # On macOS/Linux:
       ```bash
       source .venv/bin/activate
 
-5. # Install requirements
+5. # Install Requirements
       ```bash
       pip install -r requirements.txt
 
