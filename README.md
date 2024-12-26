@@ -30,17 +30,17 @@ Error handling is implemented to ensure that appropriate error messages are retu
    ```bash
    python -m venv .venv
 
-2.  Activate the virtual environment:
-3.  On Windows:
+3.  Activate the virtual environment:
+ *  On Windows:
  
       ``` bash
        .venv\scripts\activate
    
-3. On macOS/Linux:
+*  On macOS/Linux:
       ```bash
       source .venv/bin/activate
 
-5. Install Requirements
+4. Install Requirements
       ```bash
       pip install -r requirements.txt
 
