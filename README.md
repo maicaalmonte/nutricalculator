@@ -19,6 +19,7 @@ Error handling is implemented to ensure that appropriate error messages are retu
 2. Requests: To make HTTP requests to external APIs.
 3. Pandas: For processing and structuring data from the APIs into DataFrames.
 4. HTML Template: The app uses an HTML template (index.html) located in the public folder for rendering the front-end.
+5. googletrans: For language translation
 #
 **To set up the project locally, follow these steps:**
 
