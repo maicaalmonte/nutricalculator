@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="added gunicorn and redis :)" />
+    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="renamed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maica.py" beforeDir="false" afterPath="$PROJECT_DIR$/maica.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aria-query/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aria-query/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prompts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prompts/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +148,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735380441777</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="vercen">
+      <option name="closed" value="true" />
+      <created>1735381538737</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735381538737</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated js script">
+      <option name="closed" value="true" />
+      <created>1735381779755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735381779755</updated>
+    </task>
+    <task id="LOCAL-00011" summary="renamed">
+      <option name="closed" value="true" />
+      <created>1735383087074</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735383087074</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +180,9 @@
     <MESSAGE value="added googletrans and libretranslate for language translation :)" />
     <MESSAGE value="employed  redis through docker to speed up API fetching :)" />
     <MESSAGE value="added gunicorn and redis :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gunicorn and redis :)" />
+    <MESSAGE value="vercen" />
+    <MESSAGE value="updated js script" />
+    <MESSAGE value="renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed" />
   </component>
 </project>

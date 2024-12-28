@@ -129,7 +129,7 @@ def home():
         return render_template('index.html')
     except Exception as e:
         print(f"Error rendering template: {e}")
-        return "Template not found. Ensure the 'templates/index.html' file exists.", 500
+        return "Template not found. Ensure the 'public/index.html' file exists.", 500
 
 @app.route('/fetch_data', methods=['POST'])
 def fetch_data():
