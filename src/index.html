@@ -53,6 +53,18 @@
         <input type="text" id="brand" placeholder="e.g., Coca Cola">
         <label for="product_name">Product Name:</label>
         <input type="text" id="product_name" placeholder="e.g., Diet Coke">
+
+        <!-- Language Selector -->
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="pt">Portuguese</option>
+        </select>
+
         <button onclick="fetchData()">Fetch Data</button>
     </div>
 
@@ -125,95 +137,6 @@
         </tbody>
     </table>
 
-    <script>
-        let productData = [];  // Store product data
-
-        async function fetchData() {
-            const page = document.getElementById('page').value;
-            const limit = document.getElementById('limit').value;
-            const category = document.getElementById('category').value;
-            const brand = document.getElementById('brand').value;
-            const product_name = document.getElementById('product_name').value;
-            const statusDiv = document.getElementById('status');
-            const tableBody = document.getElementById('data-table').querySelector('tbody');
-
-            statusDiv.textContent = '';
-            tableBody.innerHTML = '';
-
-            try {
-                const response = await fetch('/fetch_data', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        page,
-                        limit,
-                        category,
-                        brand,
-                        product_name
-                    })
-                });
-
-                const data = await response.json();
-                if (data.status === 'success') {
-                    productData = data.data;
-
-                    productData.forEach(product => {
-                        const row = document.createElement('tr');
-                        Object.values(product).forEach(value => {
-                            const cell = document.createElement('td');
-                            cell.textContent = value;
-                            row.appendChild(cell);
-                        });
-                        tableBody.appendChild(row);
-                    });
-                } else {
-                    statusDiv.textContent = data.message;
-                }
-            } catch (error) {
-                statusDiv.textContent = 'Error fetching data.';
-                console.error('Error:', error);
-            }
-        }
-
-        // Function to fetch and display news
-        async function fetchNews() {
-            try {
-                const response = await fetch('/fetch_news');
-                const data = await response.json();
-
-                const newsContainer = document.getElementById('news-articles');
-                newsContainer.innerHTML = '';
-
-                if (data.status === 'success') {
-                    data.articles.slice(0, 3).forEach(article => {
-                        const articleDiv = document.createElement('div');
-                        articleDiv.classList.add('news-article');
-                        articleDiv.innerHTML = `
-                            <h3>${article.title}</h3>
-                            <p>${article.description || 'No description available.'}</p>
-                            <a href="${article.url}" target="_blank">Read more</a>
-                        `;
-                        newsContainer.appendChild(articleDiv);
-                    });
-                } else {
-                    newsContainer.textContent = 'Error fetching news.';
-                }
-            } catch (error) {
-                console.error('Error fetching news:', error);
-            }
-        }
-
-        // Function to calculate nutrition
-        function calculateNutrition() {
-            const productsInput = document.getElementById('products').value.split(',').map(p => p.trim());
-            const quantitiesInput = document.getElementById('quantities').value.split(',').map(q => q.trim());
-
-            // Clear previous results
-            const resultsDiv = document.getElementById('calculated-nutrition');
-            resultsDiv.innerHTML = '';
-
-            if (productsInput.length !== quantitiesInput.length) {
-                resultsDiv.textContent = 'Please make sure the number of products and quantities match.';
-                return
+    <script src="index.js"></script>
+</body>
+</html>
