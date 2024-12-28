@@ -19,7 +19,8 @@ Error handling is implemented to ensure that appropriate error messages are retu
 2. Requests: To make HTTP requests to external APIs.
 3. Pandas: For processing and structuring data from the APIs into DataFrames.
 4. HTML Template: The app uses an HTML template (index.html) located in the public folder for rendering the front-end.
-5. googletrans: For language translation
+5. Googletrans: For language translation.
+6. Redis : Incorporated Redis through Docker to speed up API fetching.
 #
 **To set up the project locally, follow these steps:**
 
@@ -51,6 +52,8 @@ Error handling is implemented to ensure that appropriate error messages are retu
 # ![Screenshot 2024-12-25 105104](https://github.com/user-attachments/assets/75f727b9-2054-4666-ad98-77949b92e78a)
 # ![Screenshot 2024-12-25 101838](https://github.com/user-attachments/assets/f4e280b9-3617-4767-84ad-58d43ab58294)
 # ![Screenshot 2024-12-25 110555](https://github.com/user-attachments/assets/55a4c72c-f549-4a5e-a047-68de4b3ba067)
+# ![Screenshot 2024-12-28 183705](https://github.com/user-attachments/assets/5ebd5b84-787f-4c58-9532-db24ed626d68)
+
 
 
 
