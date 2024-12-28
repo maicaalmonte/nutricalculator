@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="added googletrans and libretranslate for language translation :)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maica.py" beforeDir="false" afterPath="$PROJECT_DIR$/maica.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="added gunicorn and redis :)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,12 +117,30 @@
       <option name="project" value="LOCAL" />
       <updated>1735360712814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="employed  redis through docker to speed up API fetching :)">
+      <option name="closed" value="true" />
+      <created>1735380337291</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735380337291</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added gunicorn and redis :)">
+      <option name="closed" value="true" />
+      <created>1735380441777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735380441777</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cute :)" />
     <MESSAGE value="added googletrans and libretranslate for language translation :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added googletrans and libretranslate for language translation :)" />
+    <MESSAGE value="employed  redis through docker to speed up API fetching :)" />
+    <MESSAGE value="added gunicorn and redis :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added gunicorn and redis :)" />
   </component>
 </project>
