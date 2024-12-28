@@ -3,9 +3,18 @@ import requests
 import pandas as pd
 import os
 import time
+from googletrans import Translator
+import redis
+import json
 
 # Initialize Flask app with template folder explicitly set
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='public')
+
+# Initialize Redis connection
+redis_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)
+
+# Initialize the translator
+translator = Translator()
 
 # Debug: Print the current working directory
 print("Working directory:", os.getcwd())
@@ -84,6 +93,35 @@ def fetch_news_articles(api_key, query=""):
         print(f"Error fetching news: {e}")
         return []
 
+# Function to translate text using googletrans
+def translate_text(text, dest_language):
+    """
+    Translates the given text to the specified destination language.
+    """
+    try:
+        translated = translator.translate(text, dest=dest_language)
+        return translated.text
+    except Exception as e:
+        print(f"Error translating text: {e}")
+        return text
+
+# Function to cache product data in Redis
+def cache_data_in_redis(key, data, ttl=3600):
+    """
+    Caches the data in Redis with a time-to-live (TTL).
+    """
+    redis_client.setex(key, ttl, json.dumps(data))
+
+# Function to retrieve cached data from Redis
+def get_cached_data_from_redis(key):
+    """
+    Retrieves cached data from Redis if available.
+    """
+    cached_data = redis_client.get(key)
+    if cached_data:
+        return json.loads(cached_data)
+    return None
+
 # Flask Routes
 @app.route('/')
 def home():
@@ -100,8 +138,15 @@ def fetch_data():
         page = int(request.form.get('page', 1))
         limit = int(request.form.get('limit', 100))
         max_pages = int(request.form.get('max_pages', 10))
+        dest_language = request.form.get('language', 'en')  # Default to English
+
         if page < 1 or limit < 1 or max_pages < 1:
             return jsonify({'status': 'error', 'message': 'Page, limit, and max_pages must be positive integers.'}), 400
+
+        cache_key = f"products_{page}_{limit}_{max_pages}_{dest_language}"
+        cached_data = get_cached_data_from_redis(cache_key)
+        if cached_data:
+            return jsonify({'status': 'success', 'data': cached_data})
 
         # Fetch data from the OpenFoodFacts API
         products_data = fetch_all_food_data(limit=limit, max_pages=max_pages)
@@ -111,11 +156,20 @@ def fetch_data():
 
         # Extract and process the nutritional data
         products_df = extract_nutritional_data(products_data)
+
+        # Translate product names and ingredients
+        products_df['product_name'] = products_df['product_name'].apply(lambda x: translate_text(x, dest_language))
+        products_df['ingredients_text'] = products_df['ingredients_text'].apply(lambda x: translate_text(x, dest_language))
+
         data_json = products_df.to_dict(orient='records')  # Convert DataFrame to a list of dictionaries
+
+        # Cache the data in Redis
+        cache_data_in_redis(cache_key, data_json)
 
         return jsonify({'status': 'success', 'data': data_json})
     except Exception as e:
-        return jsonify({'status': 'error', 'message': str(e)})
+        print(f"Error in fetch_data: {e}")
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 @app.route('/fetch_news', methods=['GET'])
 def fetch_news():
@@ -125,7 +179,8 @@ def fetch_news():
         news_data = fetch_news_articles(api_key, query)
         return jsonify({'status': 'success', 'articles': news_data})
     except Exception as e:
-        return jsonify({'status': 'error', 'message': str(e)})
+        print(f"Error in fetch_news: {e}")
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mainutrifox</title>
+
+    <!-- Google Translate API -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,it,pt', // Add the languages you want
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background-color: #d4ff94; }
         input, button { margin: 5px; padding: 10px; font-size: 14px; }
@@ -25,23 +38,21 @@
 <body>
     <h1>NUTRITION FACTS CALCULATOR</h1>
 
+    <!-- Google Translate Dropdown -->
+    <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
     <!-- Filters for Data -->
     <div>
         <label for="page">Page:</label>
         <input type="number" id="page" value="1" min="1">
-
         <label for="limit">Limit:</label>
         <input type="number" id="limit" value="10" min="1">
-
         <label for="category">Category:</label>
         <input type="text" id="category" placeholder="e.g., Beverages">
-
         <label for="brand">Brand:</label>
         <input type="text" id="brand" placeholder="e.g., Coca Cola">
-
         <label for="product_name">Product Name:</label>
         <input type="text" id="product_name" placeholder="e.g., Diet Coke">
-
         <button onclick="fetchData()">Fetch Data</button>
     </div>
 
@@ -63,16 +74,13 @@
             <label for="products">SELECT PRODUCTS (comma separated):</label>
             <input type="text" id="products" placeholder="e.g., Coca-Cola, Nutella">
         </div>
-
         <div>
             <label for="quantities">QUANTITIES (comma separated, e.g., ml or g):</label>
             <input type="text" id="quantities" placeholder="e.g., 100ml, 50g">
         </div>
-
         <div>
             <button onclick="calculateNutrition()">CALCULATE NUTRITION</button>
         </div>
-
         <div id="calculated-nutrition" class="nutrition-results"></div>
     </div>
 
@@ -197,9 +205,15 @@
             }
         }
 
-        // Call fetchNews on page load
-        window.onload = fetchNews;
+        // Function to calculate nutrition
+        function calculateNutrition() {
+            const productsInput = document.getElementById('products').value.split(',').map(p => p.trim());
+            const quantitiesInput = document.getElementById('quantities').value.split(',').map(q => q.trim());
 
-    </script>
-</body>
-</html>
+            // Clear previous results
+            const resultsDiv = document.getElementById('calculated-nutrition');
+            resultsDiv.innerHTML = '';
+
+            if (productsInput.length !== quantitiesInput.length) {
+                resultsDiv.textContent = 'Please make sure the number of products and quantities match.';
+                return

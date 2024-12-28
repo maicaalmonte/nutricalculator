@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="cute :)">
+    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="added googletrans and libretranslate for language translation :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allfiles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allfiles.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aria-query/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aria-query/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prompts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prompts/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maica.py" beforeDir="false" afterPath="$PROJECT_DIR$/maica.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +30,12 @@
     &quot;assignee&quot;: &quot;maicaalmonte&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:maicaalmonte/nutricalculator.git",
-    "accountId": "3cb74500-c7eb-4c0f-992d-3b4fefa67c44"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:maicaalmonte/nutricalculator.git&quot;,
+    &quot;accountId&quot;: &quot;3cb74500-c7eb-4c0f-992d-3b4fefa67c44&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -109,11 +97,36 @@
       <option name="project" value="LOCAL" />
       <updated>1735074509360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cute :)">
+      <option name="closed" value="true" />
+      <created>1735074777448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735074777448</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cute :)">
+      <option name="closed" value="true" />
+      <created>1735074924759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735074924759</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added googletrans and libretranslate for language translation :)">
+      <option name="closed" value="true" />
+      <created>1735360712814</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735360712814</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cute :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="cute :)" />
+    <MESSAGE value="added googletrans and libretranslate for language translation :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added googletrans and libretranslate for language translation :)" />
   </component>
 </project>
