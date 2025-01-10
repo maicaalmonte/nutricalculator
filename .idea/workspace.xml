@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="renamed">
+    <list default="true" id="22eacb45-6f6e-44f4-97c8-5b090beb0d65" name="Changes" comment="moved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maica.py" beforeDir="false" afterPath="$PROJECT_DIR$/maica.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/transform/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@surma/rollup-plugin-off-main-thread/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aria-query/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aria-query/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-import-resolver-node/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonpath/fig.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prompts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prompts/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/docs/how-it-works.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/convert-source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/v8-to-istanbul/node_modules/convert-source-map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +55,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.imei.executor&quot;: &quot;Run&quot;,
     &quot;Python.maica.executor&quot;: &quot;Run&quot;,
+    &quot;Python.phoneloc.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jamai\PycharmProjects\nutricalculator\src" />
       <recent name="C:\Users\jamai\PycharmProjects\nutricalculator\public" />
     </key>
   </component>
@@ -172,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735383087074</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="moved">
+      <option name="closed" value="true" />
+      <created>1735383274522</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735383274522</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,6 +191,7 @@
     <MESSAGE value="vercen" />
     <MESSAGE value="updated js script" />
     <MESSAGE value="renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed" />
+    <MESSAGE value="moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved" />
   </component>
 </project>
