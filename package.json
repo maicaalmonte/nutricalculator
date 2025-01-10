@@ -2,7 +2,7 @@
   "name": "nutricalculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maicaalmonte.github.io/nutricalculator",
+  "homepage": "https://nutricalculator.vercel.app/",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
