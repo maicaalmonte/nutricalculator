@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/nutricalculator/static/js/main.02ff8210.js",
-    "index.html": "/nutricalculator/index.html",
-    "main.02ff8210.js.map": "/nutricalculator/static/js/main.02ff8210.js.map"
+    "main.js": "/static/js/main.02ff8210.js",
+    "index.html": "/index.html",
+    "main.02ff8210.js.map": "/static/js/main.02ff8210.js.map"
   },
   "entrypoints": [
     "static/js/main.02ff8210.js"
