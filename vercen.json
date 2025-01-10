@@ -5,5 +5,11 @@
       "src": "maica.py",
       "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "maica.py"
+    }
   ]
 }
