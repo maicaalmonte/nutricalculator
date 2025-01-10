@@ -3,67 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mainutrifox</title>
-
-    <!-- Google Translate API -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,es,fr,de,it,pt', // Add the languages you want
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <title>OpenFoodFacts Viewer</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #d4ff94; }
-        input, button { margin: 5px; padding: 10px; font-size: 14px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #ffd4fa; }
+        body { font-family: Bookman Old Style, sans-serif; margin: 11px; background-color: #f9f9f9; }
+        input, button { margin: 5px; padding: 10px; font-size: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 11px; background-color: white; }
         table, th, td { border: 1px solid #ccc; }
         th, td { padding: 10px; text-align: left; }
-        th { background-color: #d1b2eb; font-weight: bold; }
-        .calculator { margin-top: 20px; padding: 10px; background-color: #324232; border-radius: 5px; }
-        .calculator label, .calculator input { margin-right: 8px; }
+        th { background-color: #f4f4f4; font-weight: bold; }
+        .calculator { margin-top: 11px; padding: 10px; background-color: #e6f7ff; border-radius: 5px; }
+        .calculator label, .calculator input { margin-right: 10px; }
         .calculator div { display: inline-block; margin-right: 15px; }
         .status { color: red; margin: 10px 0; }
-        .nutrition-results { margin-top: 20px; background-color: #d1b2eb; padding: 15px; border-radius: 5px; }
-        .news-section { margin-top: 30px; background-color: #f1f1f1; padding: 15px; border-radius: 5px; }
-        .news-article { margin-bottom: 15px; padding: 10px; background-color: #fff; border: 1px solid #ccc; }
-        .news-article h3 { margin: 0; font-size: 18px; }
-        .news-article p { font-size: 14px; color: #555; }
+        .nutrition-results { margin-top: 11px; background-color: #e7ffe7; padding: 8px; border-radius: 5px; }
     </style>
 </head>
 <body>
-    <h1>NUTRITION FACTS CALCULATOR</h1>
-
-    <!-- Google Translate Dropdown -->
-    <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+    <h1>NUTRITIONAL VALUE😊</h1>
 
     <!-- Filters for Data -->
     <div>
         <label for="page">Page:</label>
         <input type="number" id="page" value="1" min="1">
+
         <label for="limit">Limit:</label>
         <input type="number" id="limit" value="10" min="1">
+
         <label for="category">Category:</label>
         <input type="text" id="category" placeholder="e.g., Beverages">
+
         <label for="brand">Brand:</label>
         <input type="text" id="brand" placeholder="e.g., Coca Cola">
+
         <label for="product_name">Product Name:</label>
         <input type="text" id="product_name" placeholder="e.g., Diet Coke">
-
-        <!-- Language Selector -->
-        <label for="language">Language:</label>
-        <select id="language">
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="it">Italian</option>
-            <option value="pt">Portuguese</option>
-        </select>
 
         <button onclick="fetchData()">Fetch Data</button>
     </div>
@@ -71,29 +44,60 @@
     <!-- Status Message -->
     <div id="status" class="status"></div>
 
-    <!-- News Section -->
-    <div class="news-section">
-        <h2>Latest News</h2>
-        <div id="news-articles">
-            <!-- Placeholder for news articles -->
-        </div>
-        <button onclick="fetchNews()">Fetch More News</button>
-    </div>
-
     <!-- Nutrition Calculator -->
     <div class="calculator">
         <div>
-            <label for="products">SELECT PRODUCTS (comma separated):</label>
+            <label for="products">Select Products (comma separated):</label>
             <input type="text" id="products" placeholder="e.g., Coca-Cola, Nutella">
         </div>
+
         <div>
-            <label for="quantities">QUANTITIES (comma separated, e.g., ml or g):</label>
+            <label for="quantities">Quantities (comma separated, e.g., ml or g):</label>
             <input type="text" id="quantities" placeholder="e.g., 100ml, 50g">
         </div>
+
         <div>
-            <button onclick="calculateNutrition()">CALCULATE NUTRITION</button>
+            <button onclick="calculateNutrition()">Calculate Nutrition</button>
         </div>
-        <div id="calculated-nutrition" class="nutrition-results"></div>
+
+        <div id="calculated-nutrition" class="nutrition-results" style="display:none;">
+            <table id="calculated-nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Energy (kcal)</th>
+                        <th>Fat (g)</th>
+                        <th>Carbohydrates (g)</th>
+                        <th>Sugars (g)</th>
+                        <th>Proteins (g)</th>
+                        <th>Salt (g)</th>
+                        <th>Fiber (g)</th>
+                        <th>Vitamin A (µg)</th>
+                        <th>Vitamin C (mg)</th>
+                        <th>Calcium (mg)</th>
+                        <th>Iron (mg)</th>
+                        <th>Magnesium (mg)</th>
+                        <th>Potassium (mg)</th>
+                        <th>Sodium (mg)</th>
+                        <th>Zinc (mg)</th>
+                        <th>Phosphorus (mg)</th>
+                        <th>Vitamin D (µg)</th>
+                        <th>Vitamin E (mg)</th>
+                        <th>Vitamin K (µg)</th>
+                        <th>Folate (µg)</th>
+                        <th>Vitamin B12 (µg)</th>
+                        <th>Vitamin B6 (mg)</th>
+                        <th>Copper (mg)</th>
+                        <th>Manganese (mg)</th>
+                        <th>Selenium (µg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Calculated nutrition data will be injected here -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Data Table -->
@@ -137,6 +141,126 @@
         </tbody>
     </table>
 
-    <script src="index.js"></script>
+    <script>
+        let productData = [];  // Store product data
+
+        async function fetchData() {
+            const page = document.getElementById('page').value;
+            const limit = document.getElementById('limit').value;
+            const category = document.getElementById('category').value;
+            const brand = document.getElementById('brand').value;
+            const product_name = document.getElementById('product_name').value;
+            const statusDiv = document.getElementById('status');
+            const tableBody = document.getElementById('data-table').querySelector('tbody');
+
+            statusDiv.textContent = '';
+            tableBody.innerHTML = '';
+
+            try {
+                const response = await fetch('/fetch_data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        page,
+                        limit,
+                        category,
+                        brand,
+                        product_name
+                    })
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    productData = data.data;
+
+                    productData.forEach(product => {
+                        const row = document.createElement('tr');
+                        Object.values(product).forEach(value => {
+                            const cell = document.createElement('td');
+                            cell.textContent = value;
+                            row.appendChild(cell);
+                        });
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    statusDiv.textContent = data.message;
+                }
+            } catch (error) {
+                statusDiv.textContent = 'Error fetching data.';
+                console.error('Error:', error);
+            }
+        }
+
+        // Function to calculate nutrition
+        function calculateNutrition() {
+            const products = document.getElementById('products').value.split(',');
+            const quantities = document.getElementById('quantities').value.split(',');
+
+            const resultsDiv = document.getElementById('calculated-nutrition');
+            const resultsTable = document.getElementById('calculated-nutrition-table');
+            const resultsTableBody = resultsTable.querySelector('tbody');
+            resultsDiv.style.display = 'none';
+            resultsTableBody.innerHTML = '';  // Clear previous results
+
+            if (products.length !== quantities.length) {
+                resultsDiv.textContent = 'The number of products must match the number of quantities.';
+                resultsDiv.style.display = 'block';
+                return;
+            }
+
+            let totalNutrients = {};
+
+            products.forEach((product, index) => {
+                const productInfo = productData.find(p => p.product_name.toLowerCase().includes(product.trim().toLowerCase()));
+                if (productInfo) {
+                    const quantity = parseFloat(quantities[index].trim());  // Assuming quantity is in grams
+                    const calculatedData = {};
+
+                    // Calculate the nutritional values based on quantities
+                    for (const [key, value] of Object.entries(productInfo)) {
+                        if (key.includes('100g')) {
+                            const nutritionalValue = value * (quantity / 100);
+                            calculatedData[key] = nutritionalValue.toFixed(2);
+
+                            // Sum up the nutritional values
+                            if (totalNutrients[key]) {
+                                totalNutrients[key] += nutritionalValue;
+                            } else {
+                                totalNutrients[key] = nutritionalValue;
+                            }
+                        }
+                    }
+
+                    // Display calculated data in table row
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${product.trim()}</td>
+                        <td>${quantity}</td>
+                        ${Object.entries(calculatedData).map(([key, value]) => `<td>${value}</td>`).join('')}
+                    `;
+                    resultsTableBody.appendChild(row);
+                } else {
+                    const p = document.createElement('p');
+                    p.textContent = `No data found for product: ${product.trim()}`;
+                    resultsDiv.appendChild(p);
+                }
+            });
+
+            // Display total sum of nutrients in table row
+            const totalRow = document.createElement('tr');
+            totalRow.innerHTML = `
+                <td><strong>Total</strong></td>
+                <td></td>
+                ${Object.entries(totalNutrients).map(([key, value]) => `<td>${value.toFixed(2)}</td>`).join('')}
+            `;
+            resultsTableBody.appendChild(totalRow);
+
+            // Show results table
+            resultsDiv.style.display = 'block';
+            resultsTable.style.display = 'table';
+        }
+    </script>
 </body>
 </html>
